@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap RTL CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
+
+    <!-- Font Awesome و Animate -->
+    <link href="css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.compat.css" rel="stylesheet" type="text/css">
+
+    <!-- Google Fonts - Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- ستايلك الخاص -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <title>شركة النور للمقاولات</title>
+    <link style="width: 100px;" rel="shortcut icon" href="Images/icon.png" type="image/png">
+
+
+    <script defer src="js/scripts.js"></script>
+
+    <style>
+        /* تطبيق الخط على كل العناصر */
+        body, h1, h2, h3, h4, h5, h6, p, a, span, label, input, button {
+            font-family: 'Cairo', 'Arial', sans-serif !important;
+        }
+
+        /* تحسين العناوين */
+        h1, h2, h3 {
+            font-weight: 700;
+        }
+
+        /* تحسين النصوص العادية */
+        p, a, span, label {
+            font-weight: 400;
+        }
+
+        /* تنسيق الهيدر */
+        header {
+            padding: 15px 0;
+            background-color: #f8f9fa; /* خلفية فاتحة للهيدر */
+        }
+
+        header .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* أيقونة الهاتف */
+        .menu-icon {
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* قائمة التنقل */
+        #mainNav {
+            display: flex;
+            flex-direction: column; /* للموبايل */
+            gap: 10px;
+        }
+
+        @media(min-width: 768px) {
+            #mainNav {
+                flex-direction: row;
+                gap: 20px;
+            }
+            .menu-icon {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+<body>
+
+
+<section id="sec-0">
+    <!-- الهيدر العلوي الفارغ -->
+    <!-- <header class="top"></header> -->
+
+    <!-- الهيدر الرئيسي -->
+    <header>
+        <div class="container">
+            <!-- الشعار -->
+            <!-- <h1 class="mb-0">
+                <span>شركة النور</span>
+                <p class="lead">نحن نقدم أفضل خدمات المقاولات.</p>
+            </h1> -->
+
+            <img  src="Images/Alnour Logo Shaker.png" alt="">
+
+
+            <!-- أيقونة القائمة للهواتف فقط -->
+            <label for="menu" class="menu-icon d-block d-md-none"><i style="color: black;" class="fas fa-bars"></i></label>
+            <input type="checkbox" id="menu" class="d-none">
+
+            <!-- قائمة التنقل -->
+            <nav class="nav flex-column flex-md-row" id="mainNav">
+                <a class="nav-link" href="index.html">الرئيسية</a>
+                <a class="nav-link" href="about.html">من نحن</a>
+                <a class="nav-link" href="projects.html">أعمالنا</a>
+                <!-- <a class="nav-link" href="services.html">الخدمات</a> -->
+                <a class="nav-link" href="contractors.html">المقاولون والموردون</a>
+                <a class="nav-link" href="jobs.html">الوظائف</a>
+                <a class="nav-link" href="news.html">أحدث الأخبار والانشطة</a>
+                <a class="nav-link" href="contact.html">تواصل معنا</a>
+            </nav>
+        </div>
+    </header>
+
+    
+<script>
+    // إظهار/إخفاء قائمة الموبايل عند الضغط على أيقونة الهامبورغر
+    const menuCheckbox = document.getElementById('menu');
+    const mainNav = document.getElementById('mainNav');
+
+    menuCheckbox.addEventListener('change', () => {
+        if(menuCheckbox.checked){
+            mainNav.style.display = 'flex';
+        } else {
+            mainNav.style.display = '';
+        }
+    });
+</script>
+
+</section>
+
+
+
+
+<section id="company-intro" class="py-5 bg-light">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- كارت كلمة رئيس مجلس الإدارة -->
+            <div class="col-lg-6">
+                <div class="card h-100 border-0 gradient-card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title mb-3">كلمة رئيس مجلس الإدارة</h3>
+
+                        <h5 class="mb-3">مهندس / شاكر حماد شاكر</h5>
+
+                        <ul class="fancy-list">
+                            <li><i class="icon">🎓</i> حاصل على بكالوريوس الهندسة المدنية من جامعة عين شمس عام 1994.</li>
+                            <li><i class="icon">📚</i> حاصل على درجة الماجستير في إدارة الأعمال (إدارة عامة) من الأكاديمية العربية للعلوم والتكنولوجيا والنقل البحري.</li>
+                            <li><i class="icon">🏆</i> حاصل على الشهادة الدولية لإدارة المشروعات (IPMA).</li>
+                        </ul>
+
+                        <p>
+                            يسعدني أن أقدم لكم قصة نجاح مؤسسة النور، حيث بدأت القصة عام 2003 في مارينا العلمين
+                            بطموح عالٍ وشغف كبير لتكون من المؤسسات الرائدة في مجال المقاولات.
+                        </p>
+
+                        <p>
+                            وبفضل الله حققت المؤسسة خلال وقت وجيز الهدف الأول، وبدأت بالعمل في الإسماعيلية
+                            والساحل الشمالي والتجمع الخامس، إلى أن تم الحصول على تصنيف الفئة الثالثة.
+                        </p>
+
+                        <p>
+                            ومن هنا بدأ التركيز على الهدف الثاني وهو المحافظة على النجاح من خلال العمل على
+                            المشروعات الاستراتيجية والخدمية والتطبيقية والمشروعات ذات الطبيعة الخاصة
+                            والمشروعات اللوجستية.
+                        </p>
+
+                        <p>
+                            وتمتلك مؤسسة النور رؤية واضحة لتقديم أفضل الخدمات لعملائها من خلال تنفيذ
+                            الأعمال المتكاملة بأيدي طاقم من المهندسين والفنيين المدربين، الذين يمتلكون
+                            الخبرة التي تمكنهم من تقديم أعلى مستويات الجودة.
+                        </p>
+
+                        <p>
+                            ونحن في قطاع المقاولات والعقارات بالشركة مستمرون في هذا النشاط بكل قوة
+                            وتوسع، وخلال السنوات الماضية قامت الشركة بإنجاز العديد من المشاريع التي
+                            تخدم المجتمع وتحقق ما تتطلع إليه حكومتنا من تنمية للوطن بما يخدم المواطن.
+                        </p>
+
+                        <p class="highlight">
+                            ونتمنى أن تحوز خدماتنا رضاكم دائماً.
+                        </p>
+                    </div>
+                    <div class="card-footer bg-transparent text-center border-0">
+                        <img src="Images/م.شاكر.jpeg" alt="رئيس مجلس الإدارة" class="img-fluid rounded-circle shadow" style="width:140px; height:140px; object-fit:cover; border:4px solid #7584d3;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- كارت من نحن -->
+            <div class="col-lg-6">
+                <div class="card h-100 border-0 gradient-card2 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title mb-3">من نحن</h3>
+
+                        <p>
+                            تأسست مؤسسة النور للمقاولات عام 2003، وهي إحدى الشركات العاملة في مجال المقاولات،
+                            والحاصلة على شهادة الجودة ISO 9001:2008. كما أن المؤسسة عضو بالاتحاد المصري
+                            لمقاولي البناء والتشييد.
+                        </p>
+
+
+
+<!-- جدول الأعمال والمجالات -->
+<div class="work-table">
+
+    <!-- الهيدر -->
+    <div class="work-header">
+        وتُصنّف المؤسسة في عدة مجالات مختلفة من أعمال المقاولات على النحو التالي:
+    </div>
+
+    <!-- الصفوف -->
+    <div class="work-row">
+        <div>🏗️</div>
+        <div>أعمال المباني (متكامل)</div>
+        <div>الفئة الثالثة</div>
+    </div>
+    <div class="work-row">
+        <div>🔧</div>
+        <div>الإنشاءات المعدنية</div>
+        <div>الفئة السادسة</div>
+    </div>
+    <div class="work-row">
+        <div>🌊</div>
+        <div>الأعمال البحرية والنهرية والتكريك</div>
+        <div>الفئة الرابعة</div>
+    </div>
+    <div class="work-row">
+        <div>💡</div>
+        <div>أعمال شبكات التيار الخفيف</div>
+        <div>الفئة الخامسة</div>
+    </div>
+    <div class="work-row">
+        <div>⚡</div>
+        <div>الأعمال الكهروميكانيكية والإلكترونية للمنشآت والمصانع والمباني العامة</div>
+        <div>الفئة الخامسة</div>
+    </div>
+    <div class="work-row">
+        <div>🔋</div>
+        <div>أعمال محطات إنتاج وتوزيع الطاقة الكهربائية والمائية والغازية والديزل التقليدي</div>
+        <div>الفئة الخامسة</div>
+    </div>
+</div>
+
+<style>
+/* جدول الأعمال */
+.work-table {
+    display: grid;
+    gap: 1rem;
+}
+
+/* الهيدر كامل العرض */
+.work-header {
+    font-weight: 600;
+    padding: 10px 15px;
+    background-color: #7584d3;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* الصفوف */
+.work-row {
+    display: grid;
+    grid-template-columns: 40px minmax(0, 1fr) 120px; /* العمود الأوسط مرن */
+    align-items: center;
+    padding: 8px 12px;
+    background-color: #f5f7fa;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+/* العمود الأول: أيقونة */
+.work-row div:first-child {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+/* العمود الأوسط: نص يلتف */
+.work-row div:nth-child(2) {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+/* العمود الثالث: ثابت */
+.work-row div:last-child {
+    text-align: center;
+    white-space: nowrap; /* يمنع الالتفاف */
+}
+
+/* متجاوب */
+@media (max-width: 768px) {
+    .work-row {
+        grid-template-columns: 35px minmax(0, 1fr) 90px;
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 480px) {
+    .work-row {
+        grid-template-columns: 30px minmax(0, 1fr) 80px;
+        font-size: 0.85em;
+    }
+}
+</style>
+
+                        <p>
+                            وجارٍ العمل حالياً على رفع فئة الأعمال البحرية إلى <strong>الفئة الثالثة</strong> قريباً بإذن الله.
+                        </p>
+
+                        <p>
+                            وتتمتع مؤسسة النور للمقاولات بخبرة كبيرة في مجال الأرصفة والأعمال البحرية المتنوعة،
+                            حيث تعتمد المؤسسة في تنفيذ عملياتها على مواردها ومعداتها الخاصة.
+                        </p>
+
+                        <p>
+                            كما تمتلك المؤسسة طاقماً هندسياً وفنياً وإدارياً على أعلى مستوى من الكفاءة،
+                            ويتمتع بخبرة عملية وعلمية واسعة في تنفيذ مختلف المشروعات.
+                        </p>
+
+                        <p>
+                            وقد شاركت الكوادر الفنية المتخصصة بالأعمال البحرية في تنفيذ عدد كبير من المشروعات
+                            البحرية المتنوعة على مدار سنوات العمل.
+                        </p>
+
+                        <p class="highlight">
+                            الجودة والالتزام هما شعارنا الدائم، حيث نضع مصلحة العميل دائماً في المرتبة الأولى.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+/* كروت متدرجة الألوان */
+.gradient-card {
+    background: linear-gradient(135deg, #f5f7fa, #cdd8f0);
+    color: #333;
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gradient-card2 {
+    background: linear-gradient(135deg, #f5f7fa, #cdd8f0);
+    color: #333;
+    border-radius: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* تأثير Hover */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* العناوين */
+.card-title {
+    font-weight: 700;
+}
+
+/* النصوص */
+.card p, .card li {
+    line-height: 1.7;
+}
+
+/* النقاط مع أيقونات */
+.fancy-list {
+    list-style:none;
+    padding-right:0;
+}
+
+.fancy-list li {
+    margin-bottom: 12px;
+    display:flex;
+    align-items:center;
+}
+
+.fancy-list .icon {
+    margin-right:10px;
+    font-size:1.2em;
+}
+
+/* نصوص مميزة */
+.highlight {
+    font-weight:600;
+    margin-top:15px;
+}
+
+/* صور الرئيس */
+.card-footer img {
+    transition: transform 0.3s;
+}
+
+.card-footer img:hover {
+    transform: scale(1.05);
+}
+</style>
+
+
+
+
+<section id="about-us" class="py-5">
+<div class="container">
+
+<div class="row text-center">
+
+    <!-- رؤيتنا -->
+    <div class="col-md-4 mb-4">
+        <div class="p-4 border rounded shadow-sm h-100 gradient-card-about hover-card">
+            <div class="icon-circle mb-3">
+                <i class="fas fa-eye fa-2x"></i>
+            </div>
+            <h5 class="card-title">رؤيتنا</h5>
+
+            <ul class="work-points">
+                <li>النجاح يتحقق من خلال طاقم المهندسين والفنيين والموظفين الذين يعملون باستمرار على التحسين والتطوير.</li>
+                <li>الإبداع والابتكار نهج دائم للمؤسسة مع تلبية احتياجات العملاء.</li>
+                <li>تحفيز الموظفين لتحقيق المزيد من النجاح والتقدم.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- رسالتنا -->
+    <div class="col-md-4 mb-4">
+        <div class="p-4 border rounded shadow-sm h-100 gradient-card-about hover-card">
+            <div class="icon-circle mb-3">
+                <i class="fas fa-envelope-open-text fa-2x"></i>
+            </div>
+            <h5 class="card-title">رسالتنا</h5>
+
+            <ul class="work-points">
+                <li>الالتزام بتقديم مستوى عالٍ من الخدمات وفقاً لمعايير الجودة لجميع العملاء.</li>
+                <li>العمل على تحقيق رضا العملاء وتلبية تطلعاتهم.</li>
+                <li>تشجيع العاملين على التطور المهني للوصول إلى أعلى المناصب القيادية وفقاً لمؤهلاتهم وخبراتهم.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- هدفنا -->
+    <div class="col-md-4 mb-4">
+        <div class="p-4 border rounded shadow-sm h-100 gradient-card-about hover-card">
+            <div class="icon-circle mb-3">
+                <i class="fas fa-bullseye fa-2x"></i>
+            </div>
+            <h5 class="card-title">هدفنا</h5>
+
+            <ul class="work-points">
+                <li>تقديم خدمات متميزة ومؤثرة في مجال المقاولات والمساهمة في الارتقاء بمستوى المشروعات.</li>
+                <li>الارتقاء بمستوى المشروعات التي تقوم المؤسسة بتنفيذها.</li>
+                <li>تحقيق الريادة في قطاع المقاولات من خلال الجودة والالتزام والتطوير المستمر.</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</section>
+
+<style>
+/* كروت مع تدرج ألوان */
+.gradient-card-about {
+    background: linear-gradient(135deg, #f5f7fa, #e0e7ff);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* تأثير Hover للكروت */
+.hover-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* دائرة الأيقونات */
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #7584d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.icon-circle:hover {
+    transform: scale(1.1);
+}
+
+/* العناوين */
+.card-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+/* قوائم نقطية */
+.work-points {
+    list-style: disc inside;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 1.8;
+}
+
+.work-points li {
+    margin-bottom: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .icon-circle {
+        width: 50px;
+        height: 50px;
+    }
+    .card-title {
+        font-size: 1.15rem;
+    }
+}
+@media (max-width: 480px) {
+    .icon-circle {
+        width: 45px;
+        height: 45px;
+    }
+    .card-title {
+        font-size: 1.05rem;
+    }
+}
+</style>
+
+
+<section id="clients" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5" style="color: #7584d3; font-weight:700;">عملائنا</h2>
+
+        <div class="row justify-content-center g-4">
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <div class="client-card-simple p-3 rounded shadow-sm h-100">
+                    <img src="Images/Egyptian_Naval_Forces_Logo.png" alt="قيادة القوات البحرية" class="img-fluid mb-2 client-logo-simple">
+                    <p class="client-name-simple">قيادة القوات البحرية</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <div class="client-card-simple p-3 rounded shadow-sm h-100">
+                    <img src="Images/القناة للمواني والمشروعات الكبرى.jpg" alt="شركة القناة للمواني والمشروعات الكبرى" class="img-fluid mb-2 client-logo-simple">
+                    <p class="client-name-simple">شركة القناة للمواني والمشروعات الكبرى</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <div class="client-card-simple p-3 rounded shadow-sm h-100">
+                    <img src="Images/حسن علام.png" alt="شركة أبناء حسن عالم للمقاولات" class="img-fluid mb-2 client-logo-simple">
+                    <p class="client-name-simple">شركة أبناء حسن علام للمقاولات</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <div class="client-card-simple p-3 rounded shadow-sm h-100">
+                    <img src="Images/كونسقوره.png" alt="شركة كونسوقرة للتوكيلات التجارية" class="img-fluid mb-2 client-logo-simple">
+                    <p class="client-name-simple">شركة كونسوقرة للتوكيلات التجارية</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <div class="client-card-simple p-3 rounded shadow-sm h-100">
+                    <img src="Images/سفارة المملكة العربية السعودية بالقاهرة.jpg" alt="سفارة المملكة العربية السعودية بالقاهرة" class="img-fluid mb-2 client-logo-simple">
+                    <p class="client-name-simple">سفارة المملكة العربية السعودية بالقاهرة</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <div class="client-card-simple p-3 rounded shadow-sm h-100">
+                    <img src="Images/المقاولون_العرب.png" alt="شركة المقاولون العرب" class="img-fluid mb-2 client-logo-simple">
+                    <p class="client-name-simple">شركة المقاولون العرب</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <div class="client-card-simple p-3 rounded shadow-sm h-100">
+                    <img src="Images/مختار ابراهيم.jpg" alt="شركة المقاولات المصرية (مختار إبراهيم)" class="img-fluid mb-2 client-logo-simple">
+                    <p class="client-name-simple">شركة المقاولات المصرية (مختار إبراهيم)</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <div class="client-card-simple p-3 rounded shadow-sm h-100">
+                    <img src="Images/Elsewedy.png" alt="شركة السويدي PSP" class="img-fluid mb-2 client-logo-simple">
+                    <p class="client-name-simple">شركة السويدي PSP</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <div class="client-card-simple p-3 rounded shadow-sm h-100">
+                    <img src="Images/القاضي.jpg" alt="جمعية القاضي الفاضل للإسكان والتعمير والمصايف" class="img-fluid mb-2 client-logo-simple">
+                    <p class="client-name-simple">جمعية القاضي الفاضل للإسكان والتعمير والمصايف</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <div class="client-card-simple p-3 rounded shadow-sm h-100">
+                    <img src="Images/الحصري.png" alt="جمعية الشيخ الحصري للخدمات الدينية والاجتماعية" class="img-fluid mb-2 client-logo-simple">
+                    <p class="client-name-simple">جمعية الشيخ الحصري للخدمات الدينية والاجتماعية</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <div class="client-card-simple p-3 rounded shadow-sm h-100">
+                    <img src="Images/المصرية لنقل الكهرباء.jpg" alt="الشركة المصرية لنقل الكهرباء" class="img-fluid mb-2 client-logo-simple">
+                    <p class="client-name-simple">الشركة المصرية لنقل الكهرباء</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <div class="client-card-simple p-3 rounded shadow-sm h-100">
+                    <img src="Images/الاسماعيلية.png" alt="شركة الإسماعيلية الوطنية للاستثمارات العقارية" class="img-fluid mb-2 client-logo-simple">
+                    <p class="client-name-simple">شركة الإسماعيلية الوطنية للاستثمارات العقارية</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <div class="client-card-simple p-3 rounded shadow-sm h-100">
+                    <img src="Images/مركز التصميمات المعمارية.jpg" alt="مركز التصميمات المعمارية" class="img-fluid mb-2 client-logo-simple">
+                    <p class="client-name-simple">مركز التصميمات المعمارية</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <div class="client-card-simple p-3 rounded shadow-sm h-100">
+                    <img src="Images/أخبار اليوم.JPG" alt="دار أخبار اليوم" class="img-fluid mb-2 client-logo-simple">
+                    <p class="client-name-simple">دار أخبار اليوم</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <div class="client-card-simple p-3 rounded shadow-sm h-100">
+                    <img src="Images/شعار_مجموعة_مستشفيات_كليوباتر.png" alt="مجموعة مستشفيات كليوباترا" class="img-fluid mb-2 client-logo-simple">
+                    <p class="client-name-simple">مجموعة مستشفيات كليوباترا</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <div class="client-card-simple p-3 rounded shadow-sm h-100">
+                    <img src="Images/شعار_جامعة_المنصورة.png" alt="جامعة المنصورة" class="img-fluid mb-2 client-logo-simple">
+                    <p class="client-name-simple">جامعة المنصورة</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <div class="client-card-simple p-3 rounded shadow-sm h-100">
+                    <img src="Images/شعار_وزارة_الإتناج_الحربي.png" alt="الانتاج الحربي" class="img-fluid mb-2 client-logo-simple">
+                    <p class="client-name-simple">الانتاج الحربي</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+/* كروت العملاء البسيطة */
+.client-card-simple {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding-top: 1rem;
+}
+
+.client-card-simple:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.client-logo-simple {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    /* border-radius: 50%; */
+    /* border: 2px solid #eee; */
+}
+
+.client-name-simple {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    line-height: 1.3;
+}
+
+/* متجاوب */
+@media (max-width: 768px) {
+    .client-logo-simple {
+        width: 70px;
+        height: 70px;
+    }
+    .client-name-simple {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .client-logo-simple {
+        width: 60px;
+        height: 60px;
+    }
+    .client-name-simple {
+        font-size: 0.85rem;
+    }
+}
+</style>
+
+
+
+
+<section id="team" class="py-5 bg-light">
+    <div class="container">
+
+        <h2 class="text-center mb-5" style="color:#7584d3;font-weight:700;">فريق العمل</h2>
+
+        <!-- الإدارة العليا -->
+        <h4 class="text-center mb-4">الإدارة العليا</h4>
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+                    <img src="images/م.شاكر.jpeg" class="img-fluid rounded-circle mb-3">
+                    <h5>م. شاكر حماد شاكر</h5>
+                    <p class="text-muted">رئيس مجلس الإدارة</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- إدارة الشؤون المالية والإدارية -->
+        <h4 class="text-center mt-5 mb-4">إدارة الشؤون المالية والإدارية</h4>
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+                    <img src="images/أ.شريف.jpeg" class="img-fluid rounded-circle mb-3">
+                    <h5>أ. شريف عبد الباقي</h5>
+                    <p class="text-muted">المدير المالي والإداري</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+                    <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+                    <h5>أ. سامح سعيد</h5>
+                    <p class="text-muted">مدير الحسابات 1</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+                    <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+                    <h5>أ. هشام خالد</h5>
+                    <p class="text-muted">مدير الحسابات 2</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+                    <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+                    <h5>أ. اسلام ممدوح</h5>
+                    <p class="text-muted">محاسب</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- إدارة اللوجستيات -->
+        <h4 class="text-center mt-5 mb-4">إدارة اللوجستيات</h4>
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+                    <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+                    <h5>أ. حازم سعدي</h5>
+                    <p class="text-muted">مشتريات ومخازن</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+                    <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+                    <h5>أ. معتز دراز</h5>
+                    <p class="text-muted">السلامة المهنية</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- الإدارة الهندسية -->
+<h4 class="text-center mt-5 mb-4">الإدارة الهندسية</h4>
+<div class="row justify-content-center">
+
+    <!-- مدير المشروعات -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>م. مصطفى حسن</h5>
+            <p class="text-muted">مدير المشروعات</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- إدارة المكتب الفني -->
+<h5 class="text-center mt-4 mb-3">إدارة المكتب الفني</h5>
+<div class="row justify-content-center">
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>م. رمضان رجب</h5>
+            <p class="text-muted">مدير المكتب الفني</p>
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>م. محمد مجدي</h5>
+            <p class="text-muted">المدير المعماري</p>
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>م. حسين السيد</h5>
+            <p class="text-muted">المدير الإنشائي</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- إدارة المساحة -->
+<h5 class="text-center mt-4 mb-3">إدارة المساحة</h5>
+<div class="row justify-content-center">
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>م. هشام علي</h5>
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>أ. عزت صلاح</h5>
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>أ. أحمد مصطفى</h5>
+        </div>
+    </div>
+
+</div>
+
+<!-- إدارة التنفيذ -->
+<h5 class="text-center mt-4 mb-3">إدارة التنفيذ</h5>
+
+<!-- مشروع 1 -->
+<h6 class="text-center mt-3 mb-2">مشروع 1</h6>
+<div class="row justify-content-center">
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>م. مصطفى عبد الستار</h5>
+        </div>
+    </div>
+    
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>م. عماد ميشيل</h5>
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>أ. محمد حسن</h5>
+            <p class="text-muted">مراقب</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- مشروع 2 -->
+<h6 class="text-center mt-3 mb-2">مشروع 2</h6>
+<div class="row justify-content-center">
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>م. محمد عبد الكريم</h5>
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>أ. حسام ناصر</h5>
+            <p class="text-muted">مراقب</p>
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>أ. حلمي صالح</h5>
+            <p class="text-muted">مراقب</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- مشروع 3 -->
+<h6 class="text-center mt-3 mb-2">مشروع 3</h6>
+<div class="row justify-content-center">
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>م. عمرو المرسي</h5>
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>م. عبد الرحمن حسن</h5>
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>أ. محمد مجدي</h5>
+            <p class="text-muted">مراقب</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- مشروع 4 -->
+<h6 class="text-center mt-3 mb-2">مشروع 4</h6>
+<div class="row justify-content-center">
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>م. حسن شاهين</h5>
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>أ. طلعت فهمي</h5>
+            <p class="text-muted">مراقب</p>
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>أ. أشرف يحيى</h5>
+            <p class="text-muted">مراقب</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- مشروع 5 -->
+<h6 class="text-center mt-3 mb-2">مشروع 5</h6>
+<div class="row justify-content-center">
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>م. طارق محمود</h5>
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>أ. محمد عصعص</h5>
+            <p class="text-muted">مراقب</p>
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="team-card p-4 text-center rounded shadow-sm h-100 gradient-card-team hover-card-team">
+            <img src="images/person.png" class="img-fluid rounded-circle mb-3">
+            <h5>أ. سيد معروف</h5>
+            <p class="text-muted">مراقب</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+    </div>
+</section>
+
+<style>
+/* كروت الفريق مع تدرج ألوان متناسق */
+.gradient-card-team {
+    background: linear-gradient(135deg, #f5f7fa, #cdd8f0);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* تأثير Hover */
+.hover-card-team:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* صور الفريق */
+.team-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 4px solid #7584d3;
+    transition: transform 0.3s;
+}
+
+.team-card img:hover {
+    transform: scale(1.05);
+}
+
+/* أسماء الفريق */
+.team-card h5 {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+/* وظائف الفريق */
+.team-card p {
+    color: #666;
+    font-weight: 500;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .team-card img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-card img {
+        width: 90px;
+        height: 90px;
+    }
+}
+</style>
+
+
+
+
+
+<!-- قسم الخريطة -->
+<div class="map-wrapper my-5">
+    <h3 class="text-center mb-3" style="color:#7584d3;">موقع شركتنا على الخريطة</h3>
+    <p class="text-center mb-4" style="font-size:18px; color:#000000;">
+        📍 برج الغنيمي أمام نادي المعلمين – الدور الخامس
+    </p>
+
+    <div class="map-responsive" style="
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    ">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3433.89392426219!2d32.26956607557548!3d30.608755074644314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDM2JzMxLjUiTiAzMsKwMTYnMTkuNyJF!5e0!3m2!1sen!2seg!4v1772697279331!5m2!1sen!2seg"
+            style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    </div>
+</div>
+
+
+  <section id="sec-6">
+    <div class="container">
+        <div class="about">
+            <!-- <h1>عن الشركة</h1> -->
+            <h2>
+                شركة النور
+                
+            </h2>
+            <p>نحن نقدم خدمات عالية الجودة في البناء والتشييد.</p>
+            <p>
+                شركة متخصصة في مجال البناء والتشييد، ملتزمون بتقديم أفضل الخدمات مع الالتزام بالمواعيد والجودة العالية في كل مشروع.
+            </p>
+            <a href="https://www.facebook.com/profile.php?id=61587769335796"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/alnour-atc-9054423b5/?isSelfProfile=true"><i class="fab fa-linkedin-in"></i></a>  
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alnour.atc@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.youtube.com/@AlnourAtc"><i class="fab fa-youtube-square"></i></a>
+        </div>
+
+        <div class="links">
+            <h1 style="color: #7584d3;">روابط سريعة</h1>
+                <a class="nav-link" href="index.html">الرئيسية</a>
+                <a class="nav-link" href="about.html">من نحن</a>
+                <a class="nav-link" href="projects.html">أعمالنا</a>
+                <!-- <a class="nav-link" href="services.html">الخدمات</a> -->
+                <a class="nav-link" href="contractors.html">المقاولون والموردون</a>
+                <a class="nav-link" href="jobs.html">الوظائف</a>
+                <a class="nav-link" href="news.html">أحدث الأخبار والانشطة</a>
+                <a class="nav-link" href="contact.html">تواصل معنا</a>
+        </div>
+
+        <!-- <div class="posts">
+            <h1>أحدث المقالات</h1>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الأول</a>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الثاني</a>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الثالث</a>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الرابع</a>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الخامس</a>
+        </div> -->
+
+<div class="contact">
+    <h1 style="color: #7584d3;">تواصل معنا</h1>
+
+    <!-- العنوان -->
+    <p>
+        <a href="https://maps.app.goo.gl/YbnDwPE1YW1KxUPF7" target="_blank" class="contact-link">
+            مصر، الإسماعيلية، شارع شبين
+        </a>
+    </p> 
+
+    <!-- البريد -->
+<p>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alnour.atc@gmail.com" target="_blank" class="contact-link">
+        alnour.atc@gmail.com
+    </a>
+</p> 
+
+    <!-- الأرقام -->
+    <p class="contact-numbers">
+        <a href="https://wa.me/201017975225" target="_blank" class="contact-link">01017975225</a>
+    </p>
+</div>
+
+    </div>
+</section>
+
+
+<style>
+
+    .contact-numbers {
+    direction: rtl; /* يحافظ على اتجاه الكتابة */
+    margin: 0;
+    padding: 0;
+}
+
+.contact-numbers a.contact-link {
+    display: inline-block;  /* يجعل كل رقم بلوك صغير */
+    margin-left: 15px;      /* المسافة بين الأرقام */
+    color: inherit;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-numbers a.contact-link:hover {
+    color: #25D366; /* لون واتساب أخضر */
+    text-decoration: underline;
+}
+
+    .contact a.contact-link {
+    color: inherit; /* يحافظ على نفس لون النص */
+    text-decoration: none; /* يشيل الخط تحت النص */
+    transition: 0.3s;
+}
+
+.contact a.contact-link:hover {
+    color: #7584d3; /* ممكن تغير اللون لأي لون تحبه عند الهوفر */
+    text-decoration: underline;
+}
+</style>
+
+
+
+    <section id="sec-7">
+    <div class="container">
+        <p>حقوق النشر ©2026 | تم التصميم بواسطة <span>شركة النور للمقاولات </span></p>
+    </div>
+</section>
+
+</body>
+</html>

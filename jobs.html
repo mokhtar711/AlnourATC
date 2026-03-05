@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap RTL CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
+
+    <!-- Font Awesome و Animate -->
+    <link href="css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.compat.css" rel="stylesheet" type="text/css">
+
+    <!-- Google Fonts - Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- ستايلك الخاص -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <title>شركة النور للمقاولات</title>
+    <link style="width: 100px;" rel="shortcut icon" href="Images/icon.png" type="image/png">
+
+
+    <script defer src="js/scripts.js"></script>
+
+    <style>
+        /* تطبيق الخط على كل العناصر */
+        body, h1, h2, h3, h4, h5, h6, p, a, span, label, input, button {
+            font-family: 'Cairo', 'Arial', sans-serif !important;
+        }
+
+        /* تحسين العناوين */
+        h1, h2, h3 {
+            font-weight: 700;
+        }
+
+        /* تحسين النصوص العادية */
+        p, a, span, label {
+            font-weight: 400;
+        }
+
+        /* تنسيق الهيدر */
+        header {
+            padding: 15px 0;
+            background-color: #f8f9fa; /* خلفية فاتحة للهيدر */
+        }
+
+        header .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* أيقونة الهاتف */
+        .menu-icon {
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* قائمة التنقل */
+        #mainNav {
+            display: flex;
+            flex-direction: column; /* للموبايل */
+            gap: 10px;
+        }
+
+        @media(min-width: 768px) {
+            #mainNav {
+                flex-direction: row;
+                gap: 20px;
+            }
+            .menu-icon {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+
+
+
+
+
+<body>
+
+
+<section id="sec-0">
+    <!-- الهيدر العلوي الفارغ -->
+    <!-- <header class="top"></header> -->
+
+    <!-- الهيدر الرئيسي -->
+    <header>
+        <div class="container">
+            <!-- الشعار -->
+            <!-- <h1 class="mb-0">
+                <span>شركة النور</span>
+                <p class="lead">نحن نقدم أفضل خدمات المقاولات.</p>
+            </h1> -->
+
+            <img src="Images/Alnour Logo Shaker.png" alt="">
+
+
+            <!-- أيقونة القائمة للهواتف فقط -->
+            <label for="menu" class="menu-icon d-block d-md-none"><i style="color: black;" class="fas fa-bars"></i></label>
+            <input type="checkbox" id="menu" class="d-none">
+
+            <!-- قائمة التنقل -->
+            <nav class="nav flex-column flex-md-row" id="mainNav">
+                <a class="nav-link" href="index.html">الرئيسية</a>
+                <a class="nav-link" href="about.html">من نحن</a>
+                <a class="nav-link" href="projects.html">أعمالنا</a>
+                <!-- <a class="nav-link" href="services.html">الخدمات</a> -->
+                <a class="nav-link" href="contractors.html">المقاولون والموردون</a>
+                <a class="nav-link" href="jobs.html">الوظائف</a>
+                <a class="nav-link" href="news.html">أحدث الأخبار والانشطة</a>
+                <a class="nav-link" href="contact.html">تواصل معنا</a>
+            </nav>
+        </div>
+    </header>
+
+    
+<script>
+    // إظهار/إخفاء قائمة الموبايل عند الضغط على أيقونة الهامبورغر
+    const menuCheckbox = document.getElementById('menu');
+    const mainNav = document.getElementById('mainNav');
+
+    menuCheckbox.addEventListener('change', () => {
+        if(menuCheckbox.checked){
+            mainNav.style.display = 'flex';
+        } else {
+            mainNav.style.display = '';
+        }
+    });
+</script>
+</section>
+
+<!-- ===== قسم الوظائف - شكل جديد للكروت ===== -->
+<section class="py-5" id="jobs-section">
+    <div class="container text-center">
+
+        <h1 class="jobs-title" style="color:#7584d3; margin-bottom:40px;">الوظائف المتاحة</h1>
+
+        <!-- ===== حالة وجود وظائف ===== -->
+        <div class="row justify-content-center g-4" id="jobs-list">
+
+            <!-- مثال لوظيفة -->
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card job-card h-100 text-center shadow-sm p-3" 
+                     style="border-radius:20px; background:#fff; transition: transform 0.3s, box-shadow 0.3s;">
+                    <div class="card-body">
+                        <i class="fas fa-hard-hat fa-3x mb-3" style="color:#7584d3;"></i>
+                        <h5 class="card-title" style="font-weight:700; color:#2a2a86;">مهندس مدني</h5>
+                        <p class="card-text" style="color:#555;">خبرة من 3 إلى 5 سنوات في أعمال البناء والمقاولات.</p>
+                        <p class="card-text" style="color:#555;"><strong style="color:#ec0303;">الموقع:</strong> الإسماعيلية</p>
+                        <a href="https://wa.me/201017975225" target="_blank" 
+                           class="btn mt-3" 
+                           style="background-color:#25D366; border-radius:30px; border:none; color:white; padding:8px 20px;">
+                           تقديم الآن
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card job-card h-100 text-center shadow-sm p-3" 
+                     style="border-radius:20px; background:#fff; transition: transform 0.3s, box-shadow 0.3s;">
+                    <div class="card-body">
+                        <i class="fas fa-bolt fa-3x mb-3" style="color:#7584d3;"></i>
+                        <h5 class="card-title" style="font-weight:700; color:#2a2a86;">فني كهرباء</h5>
+                        <p class="card-text" style="color:#555;">خبرة في التركيبات الكهربائية للمشروعات الصغيرة والكبيرة.</p>
+                        <p class="card-text" style="color:#555;"><strong style="color:#ec0303;">الموقع:</strong> القاهرة</p>
+                        <a href="https://wa.me/201017975225" target="_blank" 
+                           class="btn mt-3" 
+                           style="background-color:#25D366; border-radius:30px; border:none; color:white; padding:8px 20px;">
+                           تقديم الآن
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ===== حالة عدم وجود وظائف ===== -->
+        <div class="no-jobs" id="no-jobs-message" style="display:block; text-align:center; padding:80px 20px; border-radius:15px;">
+            <i class="fas fa-briefcase fa-5x mb-3" style="color:#7584d3;"></i>
+            <h3 style="color:#7584d3; margin-bottom:20px;">لا توجد وظائف متاحة حالياً</h3>
+            <p>تابع موقعنا لاحقاً لمعرفة الوظائف الجديدة.</p>
+            <!-- <a href="https://wa.me/201017975225" target="_blank" class="btn mt-3" 
+               style="background-color:#25D366; border-radius:30px; border:none; color:white; padding:8px 20px;">تواصل معنا</a> -->
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== كود التحكم بالظهور ===== -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const jobsList = document.getElementById('jobs-list');
+        const noJobs = document.getElementById('no-jobs-message');
+
+        // إذا كانت الوظائف صفرية، نعرض الرسالة
+        if(!jobsList || jobsList.children.length === 0){
+            if(jobsList) jobsList.style.display = 'none';
+            if(noJobs) noJobs.style.display = 'block';
+        }
+
+        // تأثير Hover للكروت
+        const jobCards = document.querySelectorAll('.job-card');
+        jobCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-10px)';
+                card.style.boxShadow = '0 15px 25px rgba(0,0,0,0.2)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+                card.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+            });
+        });
+    });
+</script>
+
+
+  <section id="sec-6">
+    <div class="container">
+        <div class="about">
+            <!-- <h1>عن الشركة</h1> -->
+            <h2>
+                شركة النور
+                
+            </h2>
+            <p>نحن نقدم خدمات عالية الجودة في البناء والتشييد.</p>
+            <p>
+                شركة متخصصة في مجال البناء والتشييد، ملتزمون بتقديم أفضل الخدمات مع الالتزام بالمواعيد والجودة العالية في كل مشروع.
+            </p>
+            <a href="https://www.facebook.com/profile.php?id=61587769335796"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/alnour-atc-9054423b5/?isSelfProfile=true"><i class="fab fa-linkedin-in"></i></a>  
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alnour.atc@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.youtube.com/@AlnourAtc"><i class="fab fa-youtube-square"></i></a>
+        </div>
+
+        <div class="links">
+            <h1 style="color: #7584d3;">روابط سريعة</h1>
+                <a class="nav-link" href="index.html">الرئيسية</a>
+                <a class="nav-link" href="about.html">من نحن</a>
+                <a class="nav-link" href="projects.html">أعمالنا</a>
+                <!-- <a class="nav-link" href="services.html">الخدمات</a> -->
+                <a class="nav-link" href="contractors.html">المقاولون والموردون</a>
+                <a class="nav-link" href="jobs.html">الوظائف</a>
+                <a class="nav-link" href="news.html">أحدث الأخبار والانشطة</a>
+                <a class="nav-link" href="contact.html">تواصل معنا</a>
+        </div>
+
+        <!-- <div class="posts">
+            <h1>أحدث المقالات</h1>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الأول</a>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الثاني</a>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الثالث</a>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الرابع</a>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الخامس</a>
+        </div> -->
+
+<div class="contact">
+    <h1 style="color: #7584d3;">تواصل معنا</h1>
+
+    <!-- العنوان -->
+    <p>
+        <a href="https://maps.app.goo.gl/YbnDwPE1YW1KxUPF7" target="_blank" class="contact-link">
+            مصر، الإسماعيلية، شارع شبين
+        </a>
+    </p> 
+
+    <!-- البريد -->
+<p>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alnour.atc@gmail.com" target="_blank" class="contact-link">
+        alnour.atc@gmail.com
+    </a>
+</p> 
+
+    <!-- الأرقام -->
+    <p class="contact-numbers">
+        <a href="https://wa.me/201017975225" target="_blank" class="contact-link">01017975225</a>
+    </p>
+</div>
+
+    </div>
+</section>
+
+
+<style>
+
+    .contact-numbers {
+    direction: rtl; /* يحافظ على اتجاه الكتابة */
+    margin: 0;
+    padding: 0;
+}
+
+.contact-numbers a.contact-link {
+    display: inline-block;  /* يجعل كل رقم بلوك صغير */
+    margin-left: 15px;      /* المسافة بين الأرقام */
+    color: inherit;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-numbers a.contact-link:hover {
+    color: #25D366; /* لون واتساب أخضر */
+    text-decoration: underline;
+}
+
+    .contact a.contact-link {
+    color: inherit; /* يحافظ على نفس لون النص */
+    text-decoration: none; /* يشيل الخط تحت النص */
+    transition: 0.3s;
+}
+
+.contact a.contact-link:hover {
+    color: #7584d3; /* ممكن تغير اللون لأي لون تحبه عند الهوفر */
+    text-decoration: underline;
+}
+</style>
+
+
+
+    <section id="sec-7">
+    <div class="container">
+        <p>حقوق النشر ©2026 | تم التصميم بواسطة <span>شركة النور للمقاولات </span></p>
+    </div>
+</section>
+
+
+
+
+</body>
+</html>

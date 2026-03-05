@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap RTL CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
+
+    <!-- Font Awesome و Animate -->
+    <link href="css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.compat.css" rel="stylesheet" type="text/css">
+
+    <!-- Google Fonts - Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- ستايلك الخاص -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <title>شركة النور للمقاولات</title>
+    <link style="width: 100px;" rel="shortcut icon" href="Images/icon.png" type="image/png">
+
+
+    <script defer src="js/scripts.js"></script>
+
+    <style>
+        /* تطبيق الخط على كل العناصر */
+        body, h1, h2, h3, h4, h5, h6, p, a, span, label, input, button {
+            font-family: 'Cairo', 'Arial', sans-serif !important;
+        }
+
+        /* تحسين العناوين */
+        h1, h2, h3 {
+            font-weight: 700;
+        }
+
+        /* تحسين النصوص العادية */
+        p, a, span, label {
+            font-weight: 400;
+        }
+
+        /* تنسيق الهيدر */
+        header {
+            padding: 15px 0;
+            background-color: #f8f9fa; /* خلفية فاتحة للهيدر */
+        }
+
+        header .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* أيقونة الهاتف */
+        .menu-icon {
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* قائمة التنقل */
+        #mainNav {
+            display: flex;
+            flex-direction: column; /* للموبايل */
+            gap: 10px;
+        }
+
+        @media(min-width: 768px) {
+            #mainNav {
+                flex-direction: row;
+                gap: 20px;
+            }
+            .menu-icon {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+
+
+
+
+
+<body>
+
+
+<section id="sec-0">
+    <!-- الهيدر العلوي الفارغ -->
+    <!-- <header class="top"></header> -->
+
+    <!-- الهيدر الرئيسي -->
+    <header>
+        <div class="container">
+            <!-- الشعار -->
+            <!-- <h1 class="mb-0">
+                <span>شركة النور</span>
+                <p class="lead">نحن نقدم أفضل خدمات المقاولات.</p>
+            </h1> -->
+
+            <img src="Images/Alnour Logo Shaker.png" alt="">
+
+
+            <!-- أيقونة القائمة للهواتف فقط -->
+            <label for="menu" class="menu-icon d-block d-md-none"><i style="color: black;" class="fas fa-bars"></i></label>
+            <input type="checkbox" id="menu" class="d-none">
+
+            <!-- قائمة التنقل -->
+            <nav class="nav flex-column flex-md-row" id="mainNav">
+                <a class="nav-link" href="index.html">الرئيسية</a>
+                <a class="nav-link" href="about.html">من نحن</a>
+                <a class="nav-link" href="projects.html">أعمالنا</a>
+                <!-- <a class="nav-link" href="services.html">الخدمات</a> -->
+                <a class="nav-link" href="contractors.html">المقاولون والموردون</a>
+                <a class="nav-link" href="jobs.html">الوظائف</a>
+                <a class="nav-link" href="news.html">أحدث الأخبار والانشطة</a>
+                <a class="nav-link" href="contact.html">تواصل معنا</a>
+            </nav>
+        </div>
+    </header>
+
+    
+<script>
+    // إظهار/إخفاء قائمة الموبايل عند الضغط على أيقونة الهامبورغر
+    const menuCheckbox = document.getElementById('menu');
+    const mainNav = document.getElementById('mainNav');
+
+    menuCheckbox.addEventListener('change', () => {
+        if(menuCheckbox.checked){
+            mainNav.style.display = 'flex';
+        } else {
+            mainNav.style.display = '';
+        }
+    });
+</script>
+</section>
+
+
+<section id="contractors" class="py-5 bg-light">
+  <div class="container text-center">
+
+    <!-- العنوان الرئيسي -->
+    <header class="mb-5">
+      <h1 class="contractors-title">المقاولون والموردون</h1>
+      <p class="text-secondary mx-auto" style="max-width:600px;">
+        نفخر بالتعاون مع مجموعة من أفضل المقاولين والموردين
+        في مجال البناء والتشييد لضمان أعلى جودة للمشروعات.
+      </p>
+    </header>
+
+    <!-- قسم المقاولون -->
+    <h2 class="contractors-subtitle mb-4">المقاولون</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="Images/logo.png" class="card-img-top mx-auto mt-3" style="width:100px;" alt="شركة النور للمقاولات">
+          <div class="card-body">
+            <h5 class="card-title">شركة النور للمقاولات</h5>
+            <p class="card-text">مقاولات عامة</p>
+            <a href="https://wa.me/201022166948" target="_blank" class="btn btn-sm mt-2" style="background-color:#25D366; border-color:#25D366; color:white;">
+  تواصل الآن
+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="Images/logo.png" class="card-img-top mx-auto mt-3" style="width:100px;" alt="شركة دلتا للمقاولات">
+          <div class="card-body">
+            <h5 class="card-title">شركة دلتا للمقاولات</h5>
+            <p class="card-text">تنفيذ المشروعات</p>
+            <a href="https://wa.me/201022166948" target="_blank" class="btn btn-sm mt-2" style="background-color:#25D366; border-color:#25D366; color:white;">
+  تواصل الآن
+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="Images/logo.png" class="card-img-top mx-auto mt-3" style="width:100px;" alt="شركة الأمل للبناء">
+          <div class="card-body">
+            <h5 class="card-title">شركة الأمل للبناء</h5>
+            <p class="card-text">أعمال الخرسانة</p>
+            <a href="https://wa.me/201022166948" target="_blank" class="btn btn-sm mt-2" style="background-color:#25D366; border-color:#25D366; color:white;">
+  تواصل الآن
+</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+<hr style="width:80px; border-top:3px solid #7584d3; margin:40px auto;">
+
+
+
+    <!-- قسم الموردون -->
+    <h2 class="contractors-subtitle mt-5 mb-4">الموردون</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="Images/logo.png" class="card-img-top mx-auto mt-3" style="width:100px;" alt="شركة الحديد الحديثة">
+          <div class="card-body">
+            <h5 class="card-title">شركة الحديد الحديثة</h5>
+            <p class="card-text">توريد حديد التسليح</p>
+            <a href="https://wa.me/201022166948" target="_blank" class="btn btn-sm mt-2" style="background-color:#25D366; border-color:#25D366; color:white;">
+  تواصل الآن
+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="Images/logo.png" class="card-img-top mx-auto mt-3" style="width:100px;" alt="شركة المستقبل للمواد">
+          <div class="card-body">
+            <h5 class="card-title">شركة المستقبل للمواد</h5>
+            <p class="card-text">توريد مواد البناء</p>
+            <a href="https://wa.me/201022166948" target="_blank" class="btn btn-sm mt-2" style="background-color:#25D366; border-color:#25D366; color:white;">
+  تواصل الآن
+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="Images/logo.png" class="card-img-top mx-auto mt-3" style="width:100px;" alt="شركة الإعمار">
+          <div class="card-body">
+            <h5 class="card-title">شركة الإعمار</h5>
+            <p class="card-text">توريد الأسمنت</p>
+            <a href="https://wa.me/201022166948" target="_blank" class="btn btn-sm mt-2" style="background-color:#25D366; border-color:#25D366; color:white;">
+  تواصل الآن
+</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="Images/logo.png" class="card-img-top mx-auto mt-3" style="width:100px;" alt="شركة المعدات الأولى">
+          <div class="card-body">
+            <h5 class="card-title">شركة المعدات الأولى</h5>
+            <p class="card-text">إيجار ومعدات</p>
+            <a href="https://wa.me/201022166948" target="_blank" class="btn btn-sm mt-2" style="background-color:#25D366; border-color:#25D366; color:white;">
+  تواصل الآن
+</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* لون العناوين حسب طلبك */
+.contractors-title,
+.contractors-subtitle {
+    color: #7584d3; /* اللون الجديد اللي اخترته */
+}
+
+#contractors .card {
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, border-top 0.5s ease;
+}
+
+#contractors .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    border-top: 4px solid #7584d3;
+}
+
+#contractors .card-title {
+    font-weight: 600;
+    color: #2a2a86; /* لون عناوين الكروت */
+}
+
+#contractors .card-text {
+    color: #555;
+}
+</style>
+
+
+
+  <section id="sec-6">
+    <div class="container">
+        <div class="about">
+            <!-- <h1>عن الشركة</h1> -->
+            <h2>
+                شركة النور
+                
+            </h2>
+            <p>نحن نقدم خدمات عالية الجودة في البناء والتشييد.</p>
+            <p>
+                شركة متخصصة في مجال البناء والتشييد، ملتزمون بتقديم أفضل الخدمات مع الالتزام بالمواعيد والجودة العالية في كل مشروع.
+            </p>
+            <a href="https://www.facebook.com/profile.php?id=61587769335796"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/alnour-atc-9054423b5/?isSelfProfile=true"><i class="fab fa-linkedin-in"></i></a>  
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alnour.atc@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.youtube.com/@AlnourAtc"><i class="fab fa-youtube-square"></i></a>
+        </div>
+
+        <div class="links">
+            <h1 style="color: #7584d3;">روابط سريعة</h1>
+                <a class="nav-link" href="index.html">الرئيسية</a>
+                <a class="nav-link" href="about.html">من نحن</a>
+                <a class="nav-link" href="projects.html">أعمالنا</a>
+                <!-- <a class="nav-link" href="services.html">الخدمات</a> -->
+                <a class="nav-link" href="contractors.html">المقاولون والموردون</a>
+                <a class="nav-link" href="jobs.html">الوظائف</a>
+                <a class="nav-link" href="news.html">أحدث الأخبار والانشطة</a>
+                <a class="nav-link" href="contact.html">تواصل معنا</a>
+        </div>
+
+        <!-- <div class="posts">
+            <h1>أحدث المقالات</h1>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الأول</a>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الثاني</a>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الثالث</a>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الرابع</a>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الخامس</a>
+        </div> -->
+
+<div class="contact">
+    <h1 style="color: #7584d3;">تواصل معنا</h1>
+
+    <!-- العنوان -->
+    <p>
+        <a href="https://maps.app.goo.gl/YbnDwPE1YW1KxUPF7" target="_blank" class="contact-link">
+            مصر، الإسماعيلية، شارع شبين
+        </a>
+    </p> 
+
+    <!-- البريد -->
+<p>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alnour.atc@gmail.com" target="_blank" class="contact-link">
+        alnour.atc@gmail.com
+    </a>
+</p> 
+
+    <!-- الأرقام -->
+    <p class="contact-numbers">
+        <a href="https://wa.me/201017975225" target="_blank" class="contact-link">01017975225</a>
+    </p>
+</div>
+
+    </div>
+</section>
+
+
+<style>
+
+    .contact-numbers {
+    direction: rtl; /* يحافظ على اتجاه الكتابة */
+    margin: 0;
+    padding: 0;
+}
+
+.contact-numbers a.contact-link {
+    display: inline-block;  /* يجعل كل رقم بلوك صغير */
+    margin-left: 15px;      /* المسافة بين الأرقام */
+    color: inherit;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-numbers a.contact-link:hover {
+    color: #25D366; /* لون واتساب أخضر */
+    text-decoration: underline;
+}
+
+    .contact a.contact-link {
+    color: inherit; /* يحافظ على نفس لون النص */
+    text-decoration: none; /* يشيل الخط تحت النص */
+    transition: 0.3s;
+}
+
+.contact a.contact-link:hover {
+    color: #7584d3; /* ممكن تغير اللون لأي لون تحبه عند الهوفر */
+    text-decoration: underline;
+}
+</style>
+
+
+
+    <section id="sec-7">
+    <div class="container">
+        <p>حقوق النشر ©2026 | تم التصميم بواسطة <span>شركة النور للمقاولات </span></p>
+    </div>
+</section>
+
+
+    <script src="js/wow.min.js"></script>
+    <script> new WOW().init();</script>
+    <script src="js/bootstrap.bundle.min.js"></script>

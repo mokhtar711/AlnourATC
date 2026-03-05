@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap RTL CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
+
+    <!-- Font Awesome و Animate -->
+    <link href="css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.compat.css" rel="stylesheet" type="text/css">
+
+    <!-- Google Fonts - Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- ستايلك الخاص -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <title>شركة النور للمقاولات</title>
+    <link style="width: 100px;" rel="shortcut icon" href="Images/icon.png" type="image/png">
+
+
+    <script defer src="js/scripts.js"></script>
+
+    <style>
+        /* تطبيق الخط على كل العناصر */
+        body, h1, h2, h3, h4, h5, h6, p, a, span, label, input, button {
+            font-family: 'Cairo', 'Arial', sans-serif !important;
+        }
+
+        /* تحسين العناوين */
+        h1, h2, h3 {
+            font-weight: 700;
+        }
+
+        /* تحسين النصوص العادية */
+        p, a, span, label {
+            font-weight: 400;
+        }
+
+        /* تنسيق الهيدر */
+        header {
+            padding: 15px 0;
+            background-color: #f8f9fa; /* خلفية فاتحة للهيدر */
+        }
+
+        header .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* أيقونة الهاتف */
+        .menu-icon {
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* قائمة التنقل */
+        #mainNav {
+            display: flex;
+            flex-direction: column; /* للموبايل */
+            gap: 10px;
+        }
+
+        @media(min-width: 768px) {
+            #mainNav {
+                flex-direction: row;
+                gap: 20px;
+            }
+            .menu-icon {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+<body>
+
+
+<section id="sec-0">
+    <!-- الهيدر العلوي الفارغ -->
+    <!-- <header class="top"></header> -->
+
+    <!-- الهيدر الرئيسي -->
+    <header>
+        <div class="container">
+            <!-- الشعار -->
+            <!-- <h1 class="mb-0">
+                <span>شركة النور</span>
+                <p class="lead">نحن نقدم أفضل خدمات المقاولات.</p>
+            </h1> -->
+
+            <img src="Images/Alnour Logo Shaker.png" alt="">
+
+
+            <!-- أيقونة القائمة للهواتف فقط -->
+            <label for="menu" class="menu-icon d-block d-md-none"><i style="color: black;" class="fas fa-bars"></i></label>
+            <input type="checkbox" id="menu" class="d-none">
+
+            <!-- قائمة التنقل -->
+            <nav class="nav flex-column flex-md-row" id="mainNav">
+                <a class="nav-link" href="index.html">الرئيسية</a>
+                <a class="nav-link" href="about.html">من نحن</a>
+                <a class="nav-link" href="projects.html">أعمالنا</a>
+                <!-- <a class="nav-link" href="services.html">الخدمات</a> -->
+                <a class="nav-link" href="contractors.html">المقاولون والموردون</a>
+                <a class="nav-link" href="jobs.html">الوظائف</a>
+                <a class="nav-link" href="news.html">أحدث الأخبار والانشطة</a>
+                <a class="nav-link" href="contact.html">تواصل معنا</a>
+            </nav>
+        </div>
+    </header>
+
+    
+<script>
+    // إظهار/إخفاء قائمة الموبايل عند الضغط على أيقونة الهامبورغر
+    const menuCheckbox = document.getElementById('menu');
+    const mainNav = document.getElementById('mainNav');
+
+    menuCheckbox.addEventListener('change', () => {
+        if(menuCheckbox.checked){
+            mainNav.style.display = 'flex';
+        } else {
+            mainNav.style.display = '';
+        }
+    });
+</script>
+</section>
+
+
+<!-- قسم تواصل معنا -->
+<section class="contact-section">
+    <div class="container text-center">
+        <h1>تواصل معنا</h1>
+        <p>تواصل مع شركتنا مباشرة عبر أي من الحسابات الرسمية التالية:</p>
+
+        <div class="contact-icons mt-4">
+            <a href="https://wa.me/201017975225" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <span>واتساب</span>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61587769335796" target="_blank" class="facebook">
+                <i class="fab fa-facebook"></i>
+                <span>فيسبوك</span>
+            </a>
+            <a href="https://www.linkedin.com/in/alnour-atc-9054423b5/" target="_blank" class="linkedin">
+                <i class="fab fa-linkedin"></i>
+                <span>لينكدإن</span>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alnour.atc@gmail.com" target="_blank" class="email">
+                <i class="fas fa-envelope"></i>
+                <span>البريد الإلكتروني</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<style>
+.contact-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact-section h1 {
+    color: #7584d3;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-icons a {
+    display: inline-block;
+    margin: 15px;
+    color: #555;
+    font-size: 40px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.contact-icons a span {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* ألوان الهوفر حسب المنصة */
+.contact-icons a.whatsapp:hover {
+    color: #25D366; /* أخضر واتس */
+    transform: translateY(-5px) scale(1.1);
+}
+
+.contact-icons a.facebook:hover {
+    color: #1877F2; /* أزرق فيسبوك */
+    transform: translateY(-5px) scale(1.1);
+}
+
+.contact-icons a.linkedin:hover {
+    color: #0A66C2; /* أزرق لينكد إن */
+    transform: translateY(-5px) scale(1.1);
+}
+
+.contact-icons a.email:hover {
+    color: #D93025; /* أحمر للـ email */
+    transform: translateY(-5px) scale(1.1);
+}
+</style>
+
+
+  <section id="sec-6">
+    <div class="container">
+        <div class="about">
+            <!-- <h1>عن الشركة</h1> -->
+            <h2>
+                شركة النور
+                
+            </h2>
+            <p>نحن نقدم خدمات عالية الجودة في البناء والتشييد.</p>
+            <p>
+                شركة متخصصة في مجال البناء والتشييد، ملتزمون بتقديم أفضل الخدمات مع الالتزام بالمواعيد والجودة العالية في كل مشروع.
+            </p>
+            <a href="https://www.facebook.com/profile.php?id=61587769335796"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/alnour-atc-9054423b5/?isSelfProfile=true"><i class="fab fa-linkedin-in"></i></a>  
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alnour.atc@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.youtube.com/@AlnourAtc"><i class="fab fa-youtube-square"></i></a>
+        </div>
+
+        <div class="links">
+            <h1 style="color: #7584d3;">روابط سريعة</h1>
+                <a class="nav-link" href="index.html">الرئيسية</a>
+                <a class="nav-link" href="about.html">من نحن</a>
+                <a class="nav-link" href="projects.html">أعمالنا</a>
+                <!-- <a class="nav-link" href="services.html">الخدمات</a> -->
+                <a class="nav-link" href="contractors.html">المقاولون والموردون</a>
+                <a class="nav-link" href="jobs.html">الوظائف</a>
+                <a class="nav-link" href="news.html">أحدث الأخبار والانشطة</a>
+                <a class="nav-link" href="contact.html">تواصل معنا</a>
+        </div>
+
+        <!-- <div class="posts">
+            <h1>أحدث المقالات</h1>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الأول</a>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الثاني</a>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الثالث</a>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الرابع</a>
+            <a href="#"><span>20<br>أغسطس</span>نص توضيحي للمقال الخامس</a>
+        </div> -->
+
+<div class="contact">
+    <h1 style="color: #7584d3;">تواصل معنا</h1>
+
+    <!-- العنوان -->
+    <p>
+        <a href="https://maps.app.goo.gl/YbnDwPE1YW1KxUPF7" target="_blank" class="contact-link">
+            مصر، الإسماعيلية، شارع شبين
+        </a>
+    </p> 
+
+    <!-- البريد -->
+<p>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alnour.atc@gmail.com" target="_blank" class="contact-link">
+        alnour.atc@gmail.com
+    </a>
+</p> 
+
+    <!-- الأرقام -->
+    <p class="contact-numbers">
+        <a href="https://wa.me/201017975225" target="_blank" class="contact-link">01017975225</a>
+    </p>
+</div>
+
+    </div>
+</section>
+
+
+<style>
+
+    .contact-numbers {
+    direction: rtl; /* يحافظ على اتجاه الكتابة */
+    margin: 0;
+    padding: 0;
+}
+
+.contact-numbers a.contact-link {
+    display: inline-block;  /* يجعل كل رقم بلوك صغير */
+    margin-left: 15px;      /* المسافة بين الأرقام */
+    color: inherit;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-numbers a.contact-link:hover {
+    color: #25D366; /* لون واتساب أخضر */
+    text-decoration: underline;
+}
+
+    .contact a.contact-link {
+    color: inherit; /* يحافظ على نفس لون النص */
+    text-decoration: none; /* يشيل الخط تحت النص */
+    transition: 0.3s;
+}
+
+.contact a.contact-link:hover {
+    color: #7584d3; /* ممكن تغير اللون لأي لون تحبه عند الهوفر */
+    text-decoration: underline;
+}
+</style>
+
+
+
+    <section id="sec-7">
+    <div class="container">
+        <p>حقوق النشر ©2026 | تم التصميم بواسطة <span>شركة النور للمقاولات </span></p>
+    </div>
+</section>
+
+
+
+</body>
+</html>
