@@ -40,11 +40,18 @@ html {
     padding: 0;
 }
 
-/* SECTION ZERO = LANDING VIEW */
-#sec-0 {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.8)), 
-                url(../Images/home2.jpg) no-repeat top center/cover;
-}
+
+    #sec-0 article h1 {
+        font-size: 2rem;
+        color: #a4c8ff;
+    }
+
+/* SECTION ZERO = LANDING VIEW  */
+/* #sec-0 {
+    background: linear-gradient(rgb(0 0 0 / 0%), rgba(0, 0, 0, 0.8)), url(../Images/home2.jpg) no-repeat top center / cover
+} */
+
+
 
 /* TOP HEADER */
 #sec-0 header.top {
@@ -132,13 +139,28 @@ html[dir="ltr"] .text-dir { text-align: left; }
 
 
 
+#sec-0 header:last-of-type {
+    position: relative; /* أو احذف position خالص */
+    background: transparent;
+    z-index: 1;
+}
 
+#sec-0 {
+    background: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
+        url(../Images/home2.jpg) no-repeat center center / cover;
+}
+
+#sec-0 header.top,
+#sec-0 header:last-of-type {
+    background: transparent;
+}
 
 /* HEADER الثانوي في SECTION 0 */
-#sec-0 header:last-of-type {
+/* #sec-0 header:last-of-type {
     background: linear-gradient(135deg, #f5f7fa, #a7c1fb);
     position: relative;
-}
+} */
 
 /* CONTAINER داخل HEADER */
 #sec-0 header:last-of-type .container {
@@ -149,6 +171,8 @@ html[dir="ltr"] .text-dir { text-align: left; }
     padding: 0.65rem 0;
     position: relative;
 }
+
+
 
 /* عنوان H1 */
 #sec-0 header:last-of-type h1 {
@@ -183,12 +207,17 @@ html[dir="ltr"] .text-dir { text-align: left; }
 #sec-0 header nav a {
     display: block;
     text-decoration: none;
-    color: black;
+    color: white;
     text-align: center;
-    padding: 10px;
+    /* padding: 10px; */
     transition: background-color 0.6s ease;
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid rgba(148, 148, 148, 0.664);
+    background-color:  rgba(148, 148, 148, 0.459);
+
+
 }
+
+
 
 /* تأثير hover على الروابط */
 #sec-0 header nav a:hover {
@@ -309,7 +338,7 @@ html[dir="ltr"] .text-dir { text-align: left; }
 
 /* اللوجو الأساسي */
 #sec-0 header img {
-    width: 300px; /* الحجم الافتراضي للشاشات الكبيرة */
+    width: 200px; /* الحجم الافتراضي للشاشات الكبيرة */
     max-width: 100%; /* يمنع اللوجو من الخروج عن عرض الشاشة */
     height: auto;
 }
@@ -351,6 +380,11 @@ html[dir="ltr"] .text-dir { text-align: left; }
 }
 
 
+
+
+
+
+
 /* SECTION ZERO - ARTICLES */
 #sec-0 article {
     display: flex;
@@ -363,8 +397,9 @@ html[dir="ltr"] .text-dir { text-align: left; }
 #sec-0 article h1 {
     font-weight: normal;
     font-size: 1.25rem;
-    color: var(--txtaccent);
+    color: #a4c8ff;
     margin-bottom: 10px;
+    
 }
 
 #sec-0 article h2 {
@@ -377,7 +412,7 @@ html[dir="ltr"] .text-dir { text-align: left; }
 }
 
 #sec-0 article h2 span {
-    color: var(--haccent);
+    color: #6fa6fb;
 }
 
 #sec-0 article p {
@@ -419,6 +454,7 @@ html[dir="ltr"] .text-dir { text-align: left; }
     color: var(--haccent);
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 25px;
 }
 
 #sec-1 article h2 {
@@ -431,6 +467,13 @@ html[dir="ltr"] .text-dir { text-align: left; }
     font-size: 0.85rem;
     text-align: center;
     margin: 1.3rem 0 1.1rem;
+    line-height: 25px;
+}
+#sec-1 article h3 {
+    font-size: 0.85rem;
+    text-align: center;
+    margin: 1.3rem 0 1.1rem;
+    line-height: 25px;
 }
 
 #sec-1 article a {
@@ -529,6 +572,7 @@ html[dir="ltr"] .text-dir { text-align: left; }
     font-weight: 700;
     margin-bottom: 10px;
     color: var(--haccent2);
+    line-height: 30px;
 }
 
 /* الفقرات داخل figure */
