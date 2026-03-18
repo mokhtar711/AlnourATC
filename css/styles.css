@@ -659,7 +659,7 @@ html[dir="ltr"] .text-dir { text-align: left; }
 /* SECTION FOUR */
 #sec-4 {
     background: linear-gradient(rgba(78, 76, 70, 0.8), rgb(117 132 211 / 72%)), 
-                url(../Images/bg2.jpg) no-repeat center center/cover;
+                url(../Images/slider/3.jpeg) no-repeat center center/cover;
     text-align: center;
     padding: 2rem 0 4rem;
 }
@@ -698,7 +698,7 @@ html[dir="ltr"] .text-dir { text-align: left; }
 }
 
 #sec-4 .filter a:hover {
-    background-color: #7584d3;
+    background-color: #e96b03;
 }
 
 /* CONTAINER AND IMAGES */
