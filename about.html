@@ -1210,6 +1210,12 @@ prevBtn.addEventListener('click', () => { scroll -= 150; }); // تقدم
     align-items: center;
     gap: 10px;
     font-family: 'Cairo', sans-serif;
+    pointer-events: none;
+}
+
+.contact-main-btn,
+.contact-options-advanced a {
+    pointer-events: auto;
 }
 
 .contact-main-btn {
@@ -1237,14 +1243,18 @@ prevBtn.addEventListener('click', () => { scroll -= 150; }); // تقدم
     display: flex;
     flex-direction: column;
     gap: 12px;
+
     opacity: 0;
+    visibility: hidden; /* 🔥 */
     pointer-events: none;
     transform: translateY(20px);
-    transition: opacity 0.4s, transform 0.4s;
+
+    transition: opacity 0.4s, transform 0.4s, visibility 0.4s;
 }
 
 .contact-float-advanced.active .contact-options-advanced {
     opacity: 1;
+    visibility: visible; /* 🔥 */
     pointer-events: auto;
     transform: translateY(0);
 }
